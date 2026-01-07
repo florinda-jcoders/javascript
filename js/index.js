@@ -1,0 +1,2 @@
+confirm("A jeniii gati???")
+
