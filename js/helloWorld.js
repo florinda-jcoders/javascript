@@ -37,8 +37,35 @@
 //   alert("Teksti u selektua");
 // }
 
-let input = document.querySelector(".inpSearch");
+// let input = document.querySelector(".inpSearch");
 
-input.addEventListener("search", () => {
-  alert("Ju keni kerkuar: " + input.value);
+// input.addEventListener("search", () => {
+//   alert("Ju keni kerkuar: " + input.value);
+// });
+
+// let paragraph = document.querySelector(".long-paragraph");
+
+// paragraph.addEventListener("scroll", () => {
+//   paragraph.style.backgroundColor = "red";
+//   paragraph.style.color = "white"
+// });
+
+
+// let mouseDown = document.querySelector(".mouse-down");
+
+// mouseDown.addEventListener("mousedown", () => {
+//   mouseDown.style.backgroundColor = "red";
+//   mouseDown.style.color = "white";
+// });
+
+// mouseDown.addEventListener("mouseup", () => {
+//   mouseDown.style.backgroundColor = "green";
+//   mouseDown.style.color = "black";
+// });
+
+
+let onInputEvent = document.querySelector(".on-input-event");
+
+onInputEvent.addEventListener("input", () => {
+  window.open("calculator.html");
 });
