@@ -1,29 +1,54 @@
-function greet() {
-  console.log("Pershendetje");
-}
+// function greet() {
+//   console.log("Pershendetje");
+// }
 
-greet.language = "Albanian";
+// greet.language = "Albanian";
 
-console.log(greet.language);
+// console.log(greet.language);
 
-function Person(emri, mbiemri, mosha, nota) {
-  this.firstName = emri;
-  this.lastName = mbiemri;
-  this.age = mosha;
-  updateNota: () => {
-    this.nota = nota;
-  };
-  infoStudenti: () => {
-    console.log(`${this.firstName} ka noten ${updateNota()}`)
+// console.log(florinda);
+// console.log(lis);
+// console.log(ylli);
+
+// let personi = {
+//   emri: "Florinda",
+//   vitiILindjes: 2002,
+//   profesioni: "Inxhiniere",
+//   pershendetje:  function(){
+//     console.log(`Pershendetje ${this.emri}. Profesioni yt eshte ${personi.profesioni}`)
+//   },
+//   llogaritMoshen: function (){
+
+//   }
+// }
+
+// personi.pershendetje()
+
+// function Personi(emri, mbiemrin, mosha) {
+//   this.emri = emri;
+//   this.mbiemrin = mbiemrin;
+//   this.mosha = mosha;
+// }
+
+// const personi1 = new Personi("Florinda", "Hasani", 23);
+// const personi2 = new Personi("Mal", "Kasemi", 14);
+
+// console.log(personi1);
+
+class Automjeti {
+  constructor(marka, ngjyra) {
+    this.marka = marka;
+    this.ngjyra = ngjyra;
+  }
+
+  vendosNgjyren(ngjyra) {
+    this.ngjyra = ngjyra;
   }
 }
 
-const florinda = new Person("florinda", "hasani", "23");
-const lis = new Person("lis", "ibrani", "13");
-const ylli = new Person("ylli", "gjikolli", "13");
 
+const llamboUrus = new Automjeti("Urus", "Pink")
+llamboUrus.vendosNgjyren("Purple")
 
-
-console.log(florinda);
-console.log(lis);
-console.log(ylli);
+console.log(llamboUrus.marka)
+console.log(llamboUrus.ngjyra)
