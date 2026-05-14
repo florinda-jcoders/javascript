@@ -1,0 +1,13 @@
+<!-- <?xml version="1.0" encoding="UTF-8"> -->
+<reservations>
+  <reservation>
+    <customerName>Florinda Hasani</customerName>
+    <date>12/05/2026</date>
+    <partySize>2</partySize>
+  </reservation>
+  <reservation>
+    <customerName>Filan Hasani</customerName>
+    <date>12/05/2026</date>
+    <partySize>3</partySize>
+  </reservation>
+</reservations>

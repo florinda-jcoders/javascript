@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  gap: 24px;
+  box-shadow: rgba(74, 157, 236, 0.5) 0px 7px 29px 0px;
+  border-radius: 12px;
+
+  p,
+  input {
+    margin: 0px;
+  }
+
+  p {
+    align-items: flex-start;
+  }
+}
+
+
+.defaultInput {
+  border: 2px solid transparent;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.defaultInput:hover,
+.defaultInput:focus {
+  border: 2px solid #4A9DEC;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+.krijoButoni {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: black;
+  background-color: #e0e8ef;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 10px;
+  padding: 16px;
+  transition: 0.2s;
+}
+
+.krijoButoni:hover {
+  color: #516d91;
+  background-color: #E5EDF5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(74 157 236);
+}
+
+.krijoButoni:active {
+  box-shadow: none;
+}
+
+
+.title {
+  font-size: large;
+  font-weight: 700;
+}
+
+
+#submitButton {
+  width: 100%;
+}
