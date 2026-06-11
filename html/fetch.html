@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .character-card {
+      justify-items: center;
+      width: 262px;
+      height: 385px;
+      border-radius: 15px;
+      background-color: #0d7c85;
+      border: 4px solid #ebff6e;
+      margin: 48px;
+    }
+
+    .character-card p {
+      padding: 8px;
+    }
+
+    .avatar {
+      margin-left: 20%;
+      margin-top: -10%;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="character-card">
+    <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="Avatar" class="avatar" />
+    <p style="color: #ebff6e"><b>Rick Sanchez</b></p>
+    <p style="color: #ffffff">Human</p>
+    <p style="color: #ffffff">You can find me in</p>
+    <p style="color: #ffffff"><b>Citadel of Ricks</b></p>
+  </div>
+  <script>
+    // Task 1: Lyp prej user-it ni id per me bo search karakterin
+    const idNgaUseri = prompt("Ma jep emrin e karakterit ")
+    // fetch("https://api.github.com/users
+    // ditto
+    fetch(`https://pokeapi.co/api/v2/pokemon/${idNgaUseri}`)
+      .then(res => res.json())
+      .then(character => console.log(character))
+    // i merr te dhanat prej api 
+    function setTheme(theme) {
+      localStorage.setItem('theme', theme)
+      document.body.className = theme;
+      console.log("Eshte ruajtur theme", theme)
+    }
+
+    function applyTheme() {
+      const savedTheme = localStorage.getItem('theme')
+      console.log("Theme eshte ", savedTheme)
+      if (savedTheme) {
+        document.body.className = savedTheme
+      }
+    }
+
+    setTheme('dark')
+    applyTheme()
+  </script>
+</body>
+
+</html>
